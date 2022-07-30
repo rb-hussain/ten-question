@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>combinations of a string</title>
+</head>
+
+<script type="text/javascript">
+	function comStr(str) {
+		var arr = [];
+		
+		for (i=0; i < str.length; i++){
+			//console.log("this is i "+i);
+			for (j=i+1; j < str.length + 1; j++)
+			 arr.push(str.slice(i , j));
+			
+			//console.log("this is j "+ j)
+
+		}
+		return arr;
+	}
+	console.log(comStr("Dog").join());
+
+</script>
+<body>
+<!--
+
+3. Write a JavaScript function that generates all combinations of a string.
+Example string : 'dog'
+Expected Output : d,do,dog,o,og,g
+
+ -->
+</body>
+</html>

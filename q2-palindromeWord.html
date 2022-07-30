@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>palindrome word</title>
+</head>
+<script type="text/javascript">
+	/*	
+	var x = 32243;
+	x = x.toString();
+	x=x.split("");
+	x=x.reverse();
+	x=x.join("");
+	console.log(x);
+*/
+	function reverseInt() {
+		//var x= num.toString().split("").reverse().join("");
+		var userString = prompt("Enter a word to check it's palindrome or not")
+		userString=userString.toLowerCase();
+		var x= userString.toLowerCase().split("").reverse().join("");
+		
+		document.write("<h4>QUUESTION NO 2</h4>");
+		document.write("Input" + "  "+userString  + "</br>");
+		document.write("Output" + " "+x);
+	
+
+		if (x == userString ) {
+			alert("Given word is Palindrome  ");
+		}
+		else{
+			alert("Given word is Not Palindrome  ");
+		}
+
+
+	}
+	reverseInt();
+
+
+</script>
+<body>
+<!-- 
+Write a JavaScript function that checks whether a passed string is palindrome or not?
+A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam, radar or level.
+-->
+</body>
+</html>
